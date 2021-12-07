@@ -18,6 +18,7 @@ select
 		WHEN lbrchg.LOCATION = 'MO' THEN 'MTOB'
 		ELSE lbrchg.LOCATION
 	END AS EAM_LOCATION,
+	locgen.MAILNAME,
 	locgen.NAME,
 	locgen.ADDRESS,
 	CONVERT(DATE,lbrchg.START_TIME) AS 'WORK_DATE',
